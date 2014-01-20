@@ -20,7 +20,7 @@
     if (self) {
         // Custom initialization
         self.title = @"Profile";
-        self.tabBarItem.image = [UIImage imageNamed:@"tab_profile_icon_v2.png"];
+        self.tabBarItem.image = [UIImage imageNamed:@"tab_icon_profile"];
     }
     return self;
 }

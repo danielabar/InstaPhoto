@@ -28,9 +28,11 @@
 		5121FD8F188C4D5800062FB6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5121FD8D188C4D5800062FB6 /* InfoPlist.strings */; };
 		5121FD91188C4D5800062FB6 /* InstaPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5121FD90188C4D5800062FB6 /* InstaPhotoTests.m */; };
 		51F9F73D188D6ACA00529662 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F9F73C188D6ACA00529662 /* logo.png */; };
-		51F9F743188D872B00529662 /* tab_profile_icon_v2.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F9F742188D872B00529662 /* tab_profile_icon_v2.png */; };
-		51F9F745188D8B7600529662 /* tab_fav_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F9F744188D8B7600529662 /* tab_fav_icon.png */; };
 		51F9F748188D8EA700529662 /* FeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F9F747188D8EA700529662 /* FeedTableViewController.m */; };
+		51F9F74B188DAFCB00529662 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F9F74A188DAFCA00529662 /* PhotoViewController.m */; };
+		51F9F74F188DB21C00529662 /* tab_icon_favorites.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F9F74C188DB21C00529662 /* tab_icon_favorites.png */; };
+		51F9F750188DB21C00529662 /* tab_icon_feed.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F9F74D188DB21C00529662 /* tab_icon_feed.png */; };
+		51F9F751188DB21C00529662 /* tab_icon_profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F9F74E188DB21C00529662 /* tab_icon_profile.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,10 +75,13 @@
 		5121FD8E188C4D5800062FB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5121FD90188C4D5800062FB6 /* InstaPhotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaPhotoTests.m; sourceTree = "<group>"; };
 		51F9F73C188D6ACA00529662 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		51F9F742188D872B00529662 /* tab_profile_icon_v2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_profile_icon_v2.png; sourceTree = "<group>"; };
-		51F9F744188D8B7600529662 /* tab_fav_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_fav_icon.png; sourceTree = "<group>"; };
 		51F9F746188D8EA700529662 /* FeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedTableViewController.h; sourceTree = "<group>"; };
 		51F9F747188D8EA700529662 /* FeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedTableViewController.m; sourceTree = "<group>"; };
+		51F9F749188DAFCA00529662 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		51F9F74A188DAFCA00529662 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		51F9F74C188DB21C00529662 /* tab_icon_favorites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_icon_favorites.png; sourceTree = "<group>"; };
+		51F9F74D188DB21C00529662 /* tab_icon_feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_icon_feed.png; sourceTree = "<group>"; };
+		51F9F74E188DB21C00529662 /* tab_icon_profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_icon_profile.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +141,9 @@
 		5121FD68188C4D5700062FB6 /* InstaPhoto */ = {
 			isa = PBXGroup;
 			children = (
-				51F9F744188D8B7600529662 /* tab_fav_icon.png */,
-				51F9F742188D872B00529662 /* tab_profile_icon_v2.png */,
+				51F9F74C188DB21C00529662 /* tab_icon_favorites.png */,
+				51F9F74D188DB21C00529662 /* tab_icon_feed.png */,
+				51F9F74E188DB21C00529662 /* tab_icon_profile.png */,
 				51F9F73C188D6ACA00529662 /* logo.png */,
 				5121FD71188C4D5700062FB6 /* AppDelegate.h */,
 				5121FD72188C4D5700062FB6 /* AppDelegate.m */,
@@ -157,6 +163,8 @@
 				510E52B2188CC44000E7F69F /* ProfileViewController.m */,
 				51F9F746188D8EA700529662 /* FeedTableViewController.h */,
 				51F9F747188D8EA700529662 /* FeedTableViewController.m */,
+				51F9F749188DAFCA00529662 /* PhotoViewController.h */,
+				51F9F74A188DAFCA00529662 /* PhotoViewController.m */,
 			);
 			path = InstaPhoto;
 			sourceTree = "<group>";
@@ -266,14 +274,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51F9F743188D872B00529662 /* tab_profile_icon_v2.png in Resources */,
 				5121FD79188C4D5700062FB6 /* Main_iPad.storyboard in Resources */,
 				5121FD7E188C4D5800062FB6 /* Images.xcassets in Resources */,
+				51F9F750188DB21C00529662 /* tab_icon_feed.png in Resources */,
+				51F9F74F188DB21C00529662 /* tab_icon_favorites.png in Resources */,
 				510E52B5188CCAB100E7F69F /* avatar_sample.png in Resources */,
 				51F9F73D188D6ACA00529662 /* logo.png in Resources */,
+				51F9F751188DB21C00529662 /* tab_icon_profile.png in Resources */,
 				510E52B7188CCBF900E7F69F /* user4.png in Resources */,
 				5121FD76188C4D5700062FB6 /* Main_iPhone.storyboard in Resources */,
-				51F9F745188D8B7600529662 /* tab_fav_icon.png in Resources */,
 				5121FD6D188C4D5700062FB6 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				510E52B0188CC39C00E7F69F /* FavoritesViewController.m in Sources */,
+				51F9F74B188DAFCB00529662 /* PhotoViewController.m in Sources */,
 				5121FD7C188C4D5700062FB6 /* ViewController.m in Sources */,
 				5121FD73188C4D5700062FB6 /* AppDelegate.m in Sources */,
 				51F9F748188D8EA700529662 /* FeedTableViewController.m in Sources */,

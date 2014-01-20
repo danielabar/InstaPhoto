@@ -21,7 +21,7 @@
     UINavigationController *profileNavController = [[UINavigationController alloc] initWithRootViewController:profileViewController];
     
     // Wrap feed table view controller in a nav controller
-    FeedTableViewController *feedTableViewController = [[FeedTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    FeedTableViewController *feedTableViewController = [[FeedTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
     UINavigationController *feedTableNavController = [[UINavigationController alloc] initWithRootViewController:feedTableViewController];
     
     // Wrap favorites view controller in a nav controller

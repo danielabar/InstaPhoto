@@ -20,6 +20,9 @@
     if (self) {
         // Custom initialization
         self.title = @"Feed";
+        self.tabBarItem.image = [UIImage imageNamed:@"tab_icon_feed"];
+        self.imageTitleArray = @[@"Image 1",@"Image 2",@"Image 3",@"Image 4", @"Image 5"];
+        self.imageFileNameArray = @[@"image1.png", @"image2.png", @"image3.png", @"image4.png", @"image5.png"];
     }
     return self;
 }
@@ -50,7 +53,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 50;
+    return self.imageTitleArray.count;
 }
 
 // This method runs one time for each row, when it becomes visible
@@ -61,13 +64,16 @@
     if (cell == nil) {
         NSLog(@"Creating new cell");
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Title"];
-        cell.textLabel.text =[NSString stringWithFormat:@"Row %d", indexPath.row];
-    } else {
-        NSLog(@"Reusing existing cell");
+        cell.textLabel.text = self.imageTitleArray[indexPath.row];
     }
-    
     return cell;
 }
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"User clicked on image name %@", self.imageFileNameArray[indexPath.row]);
+}
+
 
 /*
 // Override to support conditional editing of the table view.
