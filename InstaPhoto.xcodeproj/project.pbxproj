@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		510E52AD188CC20B00E7F69F /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 510E52AC188CC20B00E7F69F /* FeedViewController.m */; };
+		510E52B0188CC39C00E7F69F /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 510E52AF188CC39C00E7F69F /* FavoritesViewController.m */; };
+		510E52B3188CC44000E7F69F /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 510E52B2188CC44000E7F69F /* ProfileViewController.m */; };
 		5121FD63188C4D5700062FB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5121FD62188C4D5700062FB6 /* Foundation.framework */; };
 		5121FD65188C4D5700062FB6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5121FD64188C4D5700062FB6 /* CoreGraphics.framework */; };
 		5121FD67188C4D5700062FB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5121FD66188C4D5700062FB6 /* UIKit.framework */; };
@@ -22,6 +25,9 @@
 		5121FD87188C4D5800062FB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5121FD66188C4D5700062FB6 /* UIKit.framework */; };
 		5121FD8F188C4D5800062FB6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5121FD8D188C4D5800062FB6 /* InfoPlist.strings */; };
 		5121FD91188C4D5800062FB6 /* InstaPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5121FD90188C4D5800062FB6 /* InstaPhotoTests.m */; };
+		51FC62EA188CBE7F006120AD /* tab_icon_favorites.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FC62E7188CBE7F006120AD /* tab_icon_favorites.png */; };
+		51FC62EB188CBE7F006120AD /* tab_icon_feed.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FC62E8188CBE7F006120AD /* tab_icon_feed.png */; };
+		51FC62EC188CBE7F006120AD /* tab_icon_profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FC62E9188CBE7F006120AD /* tab_icon_profile.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		510E52AB188CC20B00E7F69F /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
+		510E52AC188CC20B00E7F69F /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
+		510E52AE188CC39C00E7F69F /* FavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesViewController.h; sourceTree = "<group>"; };
+		510E52AF188CC39C00E7F69F /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
+		510E52B1188CC44000E7F69F /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		510E52B2188CC44000E7F69F /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		5121FD5F188C4D5700062FB6 /* InstaPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5121FD62188C4D5700062FB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5121FD64188C4D5700062FB6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +67,9 @@
 		5121FD8C188C4D5800062FB6 /* InstaPhotoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InstaPhotoTests-Info.plist"; sourceTree = "<group>"; };
 		5121FD8E188C4D5800062FB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5121FD90188C4D5800062FB6 /* InstaPhotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaPhotoTests.m; sourceTree = "<group>"; };
+		51FC62E7188CBE7F006120AD /* tab_icon_favorites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_icon_favorites.png; sourceTree = "<group>"; };
+		51FC62E8188CBE7F006120AD /* tab_icon_feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_icon_feed.png; sourceTree = "<group>"; };
+		51FC62E9188CBE7F006120AD /* tab_icon_profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_icon_profile.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +129,9 @@
 		5121FD68188C4D5700062FB6 /* InstaPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				51FC62E7188CBE7F006120AD /* tab_icon_favorites.png */,
+				51FC62E8188CBE7F006120AD /* tab_icon_feed.png */,
+				51FC62E9188CBE7F006120AD /* tab_icon_profile.png */,
 				5121FD71188C4D5700062FB6 /* AppDelegate.h */,
 				5121FD72188C4D5700062FB6 /* AppDelegate.m */,
 				5121FD74188C4D5700062FB6 /* Main_iPhone.storyboard */,
@@ -122,6 +140,12 @@
 				5121FD7B188C4D5700062FB6 /* ViewController.m */,
 				5121FD7D188C4D5800062FB6 /* Images.xcassets */,
 				5121FD69188C4D5700062FB6 /* Supporting Files */,
+				510E52AB188CC20B00E7F69F /* FeedViewController.h */,
+				510E52AC188CC20B00E7F69F /* FeedViewController.m */,
+				510E52AE188CC39C00E7F69F /* FavoritesViewController.h */,
+				510E52AF188CC39C00E7F69F /* FavoritesViewController.m */,
+				510E52B1188CC44000E7F69F /* ProfileViewController.h */,
+				510E52B2188CC44000E7F69F /* ProfileViewController.m */,
 			);
 			path = InstaPhoto;
 			sourceTree = "<group>";
@@ -231,8 +255,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51FC62EC188CBE7F006120AD /* tab_icon_profile.png in Resources */,
 				5121FD79188C4D5700062FB6 /* Main_iPad.storyboard in Resources */,
 				5121FD7E188C4D5800062FB6 /* Images.xcassets in Resources */,
+				51FC62EB188CBE7F006120AD /* tab_icon_feed.png in Resources */,
+				51FC62EA188CBE7F006120AD /* tab_icon_favorites.png in Resources */,
 				5121FD76188C4D5700062FB6 /* Main_iPhone.storyboard in Resources */,
 				5121FD6D188C4D5700062FB6 /* InfoPlist.strings in Resources */,
 			);
@@ -253,8 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				510E52B0188CC39C00E7F69F /* FavoritesViewController.m in Sources */,
 				5121FD7C188C4D5700062FB6 /* ViewController.m in Sources */,
 				5121FD73188C4D5700062FB6 /* AppDelegate.m in Sources */,
+				510E52AD188CC20B00E7F69F /* FeedViewController.m in Sources */,
+				510E52B3188CC44000E7F69F /* ProfileViewController.m in Sources */,
 				5121FD6F188C4D5700062FB6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +504,7 @@
 				5121FD96188C4D5800062FB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5121FD97188C4D5800062FB6 /* Build configuration list for PBXNativeTarget "InstaPhotoTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +513,7 @@
 				5121FD99188C4D5800062FB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
