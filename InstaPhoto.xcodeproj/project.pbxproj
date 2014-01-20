@@ -30,6 +30,7 @@
 		51F9F73D188D6ACA00529662 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F9F73C188D6ACA00529662 /* logo.png */; };
 		51F9F743188D872B00529662 /* tab_profile_icon_v2.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F9F742188D872B00529662 /* tab_profile_icon_v2.png */; };
 		51F9F745188D8B7600529662 /* tab_fav_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F9F744188D8B7600529662 /* tab_fav_icon.png */; };
+		51F9F748188D8EA700529662 /* FeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F9F747188D8EA700529662 /* FeedTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		51F9F73C188D6ACA00529662 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		51F9F742188D872B00529662 /* tab_profile_icon_v2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_profile_icon_v2.png; sourceTree = "<group>"; };
 		51F9F744188D8B7600529662 /* tab_fav_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_fav_icon.png; sourceTree = "<group>"; };
+		51F9F746188D8EA700529662 /* FeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedTableViewController.h; sourceTree = "<group>"; };
+		51F9F747188D8EA700529662 /* FeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +155,8 @@
 				510E52AF188CC39C00E7F69F /* FavoritesViewController.m */,
 				510E52B1188CC44000E7F69F /* ProfileViewController.h */,
 				510E52B2188CC44000E7F69F /* ProfileViewController.m */,
+				51F9F746188D8EA700529662 /* FeedTableViewController.h */,
+				51F9F747188D8EA700529662 /* FeedTableViewController.m */,
 			);
 			path = InstaPhoto;
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 				510E52B0188CC39C00E7F69F /* FavoritesViewController.m in Sources */,
 				5121FD7C188C4D5700062FB6 /* ViewController.m in Sources */,
 				5121FD73188C4D5700062FB6 /* AppDelegate.m in Sources */,
+				51F9F748188D8EA700529662 /* FeedTableViewController.m in Sources */,
 				510E52AD188CC20B00E7F69F /* FeedViewController.m in Sources */,
 				510E52B3188CC44000E7F69F /* ProfileViewController.m in Sources */,
 				5121FD6F188C4D5700062FB6 /* main.m in Sources */,

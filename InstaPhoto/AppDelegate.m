@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "FeedViewController.h"
+#import "FeedTableViewController.h"
 #import "FavoritesViewController.h"
 #import "ProfileViewController.h"
 
@@ -20,9 +20,7 @@
     ProfileViewController *profileViewController = [[ProfileViewController alloc] init];
     UINavigationController *profileNavController = [[UINavigationController alloc] initWithRootViewController:profileViewController];
     
-    // Wrap feed view controller in a nav controller
-    FeedViewController *feedViewController = [[FeedViewController alloc] init];
-    UINavigationController *feedNavController = [[UINavigationController alloc] initWithRootViewController:feedViewController];
+    FeedTableViewController *feedTableViewController = [[FeedTableViewController alloc] initWithStyle:UITableViewStylePlain];
     
     // Wrap favorites view controller in a nav controller
     FavoritesViewController *favoritesViewController = [[FavoritesViewController alloc] init];
@@ -30,7 +28,7 @@
     
     // Wrap all nav controllers in the tab controller
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    [tabBarController setViewControllers:@[profileNavController, feedNavController, favoritesNavController]];
+    [tabBarController setViewControllers:@[feedTableViewController, favoritesNavController, profileNavController]];
     
     self.window = [[UIWindow alloc] initWithFrame:[ [UIScreen mainScreen] bounds]];
     self.window.rootViewController = tabBarController;
@@ -38,21 +36,6 @@
     
     return YES;
 }
-
-//- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-//{
-//    FeedViewController *feedViewController = [[FeedViewController alloc] init];
-//    //FavoritesViewController *favoritesViewController = [[FavoritesViewController alloc] init];
-//    //ProfileViewController *profileViewController = [[ProfileViewController alloc] init];
-//    
-//    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:feedViewController];
-//    
-//    self.window = [[UIWindow alloc] initWithFrame:[ [UIScreen mainScreen] bounds]];
-//    self.window.rootViewController = navigationController;
-//    [self.window makeKeyAndVisible];
-//    
-//    return YES;
-//}
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
