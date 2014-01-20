@@ -32,18 +32,19 @@
     self.view.backgroundColor = [UIColor redColor];
     
     // Logo image as static display
+    /*
     UIImageView *tryiosView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo.png"]];
     [tryiosView setContentMode:UIViewContentModeTop];
     tryiosView.frame = self.view.frame;
     [self.view addSubview:tryiosView];
+     */
     
     // Logo image as clickable button
-    /*
     UIButton *tryiosView = [UIButton buttonWithType:UIButtonTypeCustom];
-    [tryiosView setImage:[UIImage imageNamed:@"logo.jpg"] forState:UIControlStateNormal];
-    [tryiosView setImage:[UIImage imageNamed:@"logo.jpg"] forState:UIControlStateHighlighted];
+    [tryiosView setImage:[UIImage imageNamed:@"logo.png"] forState:UIControlStateNormal];
+    [tryiosView setImage:[UIImage imageNamed:@"logo.png"] forState:UIControlStateHighlighted];
+    [tryiosView setFrame:CGRectMake(15, 15, 100, 100)];
     [self.view addSubview:tryiosView];
-     */
     
     UIButton *profileButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     profileButton.frame = CGRectMake(60, 100, 200, 44);
