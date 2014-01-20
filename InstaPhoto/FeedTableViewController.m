@@ -64,15 +64,17 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Title"];
     if (cell == nil) {
         NSLog(@"Creating new cell");
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Title"];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Title"];
         cell.textLabel.text = self.imageTitleArray[indexPath.row];
+        cell.detailTextLabel.text = self.imageFileNameArray[indexPath.row];
+        // set thumbnail - this is a hack because all cells will get the same image
+        cell.imageView.image = [UIImage imageNamed:@"boat-small.jpg"];
     }
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"User clicked on image name %@", self.imageFileNameArray[indexPath.row]);
     PhotoViewController *photoVC = [[PhotoViewController alloc] init];
     photoVC.imageFileName = self.imageFileNameArray[indexPath.row];
     [self.navigationController pushViewController:photoVC animated:YES];

@@ -34,6 +34,7 @@
 		51F9F750188DB21C00529662 /* tab_icon_feed.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F9F74D188DB21C00529662 /* tab_icon_feed.png */; };
 		51F9F751188DB21C00529662 /* tab_icon_profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F9F74E188DB21C00529662 /* tab_icon_profile.png */; };
 		51F9F753188DB3F200529662 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F9F752188DB3F200529662 /* image1.png */; };
+		51F9F755188DB56400529662 /* boat-small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51F9F754188DB56400529662 /* boat-small.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		51F9F74D188DB21C00529662 /* tab_icon_feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_icon_feed.png; sourceTree = "<group>"; };
 		51F9F74E188DB21C00529662 /* tab_icon_profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_icon_profile.png; sourceTree = "<group>"; };
 		51F9F752188DB3F200529662 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
+		51F9F754188DB56400529662 /* boat-small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "boat-small.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 		5121FD68188C4D5700062FB6 /* InstaPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				51F9F754188DB56400529662 /* boat-small.jpg */,
 				51F9F752188DB3F200529662 /* image1.png */,
 				51F9F74C188DB21C00529662 /* tab_icon_favorites.png */,
 				51F9F74D188DB21C00529662 /* tab_icon_feed.png */,
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5121FD79188C4D5700062FB6 /* Main_iPad.storyboard in Resources */,
+				51F9F755188DB56400529662 /* boat-small.jpg in Resources */,
 				5121FD7E188C4D5800062FB6 /* Images.xcassets in Resources */,
 				51F9F750188DB21C00529662 /* tab_icon_feed.png in Resources */,
 				51F9F74F188DB21C00529662 /* tab_icon_favorites.png in Resources */,
