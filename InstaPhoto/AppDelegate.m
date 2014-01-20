@@ -16,19 +16,44 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    FeedViewController *feedViewController = [[FeedViewController alloc] init];
-    //FavoritesViewController *favoritesViewController = [[FavoritesViewController alloc] init];
-    //ProfileViewController *profileViewController = [[ProfileViewController alloc] init];
+    // Wrap profile view controller in a nav controller
+    ProfileViewController *profileViewController = [[ProfileViewController alloc] init];
+    UINavigationController *profileNavController = [[UINavigationController alloc] initWithRootViewController:profileViewController];
     
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:feedViewController];
+    // Wrap feed view controller in a nav controller
+    FeedViewController *feedViewController = [[FeedViewController alloc] init];
+    UINavigationController *feedNavController = [[UINavigationController alloc] initWithRootViewController:feedViewController];
+    
+    // Wrap favorites view controller in a nav controller
+    FavoritesViewController *favoritesViewController = [[FavoritesViewController alloc] init];
+    UINavigationController *favoritesNavController = [[UINavigationController alloc] initWithRootViewController:favoritesViewController];
+    
+    // Wrap all nav controllers in the tab controller
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    [tabBarController setViewControllers:@[profileNavController, feedNavController, favoritesNavController]];
     
     self.window = [[UIWindow alloc] initWithFrame:[ [UIScreen mainScreen] bounds]];
-    self.window.rootViewController = navigationController;
+    self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
     
     return YES;
 }
-							
+
+//- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+//{
+//    FeedViewController *feedViewController = [[FeedViewController alloc] init];
+//    //FavoritesViewController *favoritesViewController = [[FavoritesViewController alloc] init];
+//    //ProfileViewController *profileViewController = [[ProfileViewController alloc] init];
+//    
+//    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:feedViewController];
+//    
+//    self.window = [[UIWindow alloc] initWithFrame:[ [UIScreen mainScreen] bounds]];
+//    self.window.rootViewController = navigationController;
+//    [self.window makeKeyAndVisible];
+//    
+//    return YES;
+//}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

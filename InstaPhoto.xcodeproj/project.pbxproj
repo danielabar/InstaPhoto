@@ -28,9 +28,7 @@
 		5121FD8F188C4D5800062FB6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5121FD8D188C4D5800062FB6 /* InfoPlist.strings */; };
 		5121FD91188C4D5800062FB6 /* InstaPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5121FD90188C4D5800062FB6 /* InstaPhotoTests.m */; };
 		51F9F73D188D6ACA00529662 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F9F73C188D6ACA00529662 /* logo.png */; };
-		51FC62EA188CBE7F006120AD /* tab_icon_favorites.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FC62E7188CBE7F006120AD /* tab_icon_favorites.png */; };
-		51FC62EB188CBE7F006120AD /* tab_icon_feed.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FC62E8188CBE7F006120AD /* tab_icon_feed.png */; };
-		51FC62EC188CBE7F006120AD /* tab_icon_profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FC62E9188CBE7F006120AD /* tab_icon_profile.png */; };
+		51F9F743188D872B00529662 /* tab_profile_icon_v2.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F9F742188D872B00529662 /* tab_profile_icon_v2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,9 +71,7 @@
 		5121FD8E188C4D5800062FB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5121FD90188C4D5800062FB6 /* InstaPhotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaPhotoTests.m; sourceTree = "<group>"; };
 		51F9F73C188D6ACA00529662 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		51FC62E7188CBE7F006120AD /* tab_icon_favorites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_icon_favorites.png; sourceTree = "<group>"; };
-		51FC62E8188CBE7F006120AD /* tab_icon_feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_icon_feed.png; sourceTree = "<group>"; };
-		51FC62E9188CBE7F006120AD /* tab_icon_profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_icon_profile.png; sourceTree = "<group>"; };
+		51F9F742188D872B00529662 /* tab_profile_icon_v2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_profile_icon_v2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,10 +131,8 @@
 		5121FD68188C4D5700062FB6 /* InstaPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				51F9F742188D872B00529662 /* tab_profile_icon_v2.png */,
 				51F9F73C188D6ACA00529662 /* logo.png */,
-				51FC62E7188CBE7F006120AD /* tab_icon_favorites.png */,
-				51FC62E8188CBE7F006120AD /* tab_icon_feed.png */,
-				51FC62E9188CBE7F006120AD /* tab_icon_profile.png */,
 				5121FD71188C4D5700062FB6 /* AppDelegate.h */,
 				5121FD72188C4D5700062FB6 /* AppDelegate.m */,
 				510E52B6188CCBF900E7F69F /* user4.png */,
@@ -264,12 +258,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51FC62EC188CBE7F006120AD /* tab_icon_profile.png in Resources */,
+				51F9F743188D872B00529662 /* tab_profile_icon_v2.png in Resources */,
 				5121FD79188C4D5700062FB6 /* Main_iPad.storyboard in Resources */,
 				5121FD7E188C4D5800062FB6 /* Images.xcassets in Resources */,
-				51FC62EB188CBE7F006120AD /* tab_icon_feed.png in Resources */,
 				510E52B5188CCAB100E7F69F /* avatar_sample.png in Resources */,
-				51FC62EA188CBE7F006120AD /* tab_icon_favorites.png in Resources */,
 				51F9F73D188D6ACA00529662 /* logo.png in Resources */,
 				510E52B7188CCBF900E7F69F /* user4.png in Resources */,
 				5121FD76188C4D5700062FB6 /* Main_iPhone.storyboard in Resources */,
