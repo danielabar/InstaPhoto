@@ -44,6 +44,7 @@
     [tryiosView setImage:[UIImage imageNamed:@"logo.png"] forState:UIControlStateNormal];
     [tryiosView setImage:[UIImage imageNamed:@"logo.png"] forState:UIControlStateHighlighted];
     [tryiosView setFrame:CGRectMake(15, 15, 100, 100)];
+    [tryiosView addTarget:self action:@selector(showZoomedPicture:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:tryiosView];
     
     UIButton *profileButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -57,6 +58,25 @@
 {
     ProfileViewController *profileViewController = [[ProfileViewController alloc] init];
     [self.navigationController pushViewController:profileViewController animated:YES];
+}
+
+- (void)showZoomedPicture:(UIButton *)sender
+{
+    // Create a view controller on the fly!
+    UIViewController *tryiosImageViewController = [[UIViewController alloc] init];
+    tryiosImageViewController.view.frame = self.view.frame;
+    tryiosImageViewController.title = @"Try IOS Logo";
+    
+    // Create the image view
+    UIImageView *tryiosView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo.png"]];
+    [tryiosView setContentMode:UIViewContentModeScaleAspectFit];
+    tryiosView.frame = tryiosImageViewController.view.frame;
+    
+    // Hookup the image view to the controller
+    [tryiosImageViewController.view addSubview:tryiosView];
+    
+    // Push control to the newly created view controller
+    [self.navigationController pushViewController:tryiosImageViewController animated:YES];
 }
 
 
