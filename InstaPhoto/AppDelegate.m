@@ -20,7 +20,9 @@
     ProfileViewController *profileViewController = [[ProfileViewController alloc] init];
     UINavigationController *profileNavController = [[UINavigationController alloc] initWithRootViewController:profileViewController];
     
+    // Wrap feed table view controller in a nav controller
     FeedTableViewController *feedTableViewController = [[FeedTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *feedTableNavController = [[UINavigationController alloc] initWithRootViewController:feedTableViewController];
     
     // Wrap favorites view controller in a nav controller
     FavoritesViewController *favoritesViewController = [[FavoritesViewController alloc] init];
@@ -28,7 +30,7 @@
     
     // Wrap all nav controllers in the tab controller
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    [tabBarController setViewControllers:@[feedTableViewController, favoritesNavController, profileNavController]];
+    [tabBarController setViewControllers:@[feedTableNavController, favoritesNavController, profileNavController]];
     
     self.window = [[UIWindow alloc] initWithFrame:[ [UIScreen mainScreen] bounds]];
     self.window.rootViewController = tabBarController;
