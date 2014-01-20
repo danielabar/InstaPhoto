@@ -10,4 +10,6 @@
 
 @interface FavoritesViewController : UIViewController
 
+- (void)showProfile:(UIButton *)sender;
+
 @end

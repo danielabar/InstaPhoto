@@ -10,4 +10,6 @@
 
 @interface FeedViewController : UIViewController
 
+- (void)showFavorites:(UIButton *)sender;
+
 @end
