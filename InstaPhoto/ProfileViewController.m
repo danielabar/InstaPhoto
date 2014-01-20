@@ -31,8 +31,8 @@
 	// Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor yellowColor];
     UIImageView *greggView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"user4"]];
-    [greggView setContentMode:UIViewContentModeScaleAspectFit];
-    greggView.frame = self.view.frame;
+    //[greggView setContentMode:UIViewContentModeScaleAspectFit];
+    greggView.frame = CGRectMake(20, 20, 100, 114);
     [self.view addSubview:greggView];
 }
 
