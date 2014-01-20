@@ -8,6 +8,7 @@
 
 #import "ProfileViewController.h"
 #import "UIImageView+AFNetworking.h"
+#import "AFHTTPRequestOperation.h"
 
 @interface ProfileViewController ()
 
@@ -28,23 +29,26 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    UIImageView *profileImageView = [[UIImageView alloc] init];
-    profileImageView.frame = CGRectMake(20, 20, 100, 114);
-    [profileImageView setImageWithURL:[NSURL URLWithString:@"http://animalwelfaretaiwan.webs.com/Cow_with_calf_dsc06514.jpg"]
-                     placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
-    [self.view addSubview:profileImageView];
+    NSURL *URL = [NSURL URLWithString:@"http://echo.jsontest.com/firstName/Gregg/lastName/Pollack/city/Orlando"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc]
+                                         initWithRequest:request];
+    operation.responseSerializer = [AFJSONResponseSerializer serializer];
+    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"%@", responseObject);
+    } failure:nil];
+    [operation start];
 }
 
 //- (void)viewDidLoad
 //{
 //    [super viewDidLoad];
-//	// Do any additional setup after loading the view.
 //    self.view.backgroundColor = [UIColor yellowColor];
-//    UIImageView *greggView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"user4"]];
-//    //[greggView setContentMode:UIViewContentModeScaleAspectFit];
-//    greggView.frame = CGRectMake(20, 20, 100, 114);
-//    [self.view addSubview:greggView];
+//    UIImageView *profileImageView = [[UIImageView alloc] init];
+//    profileImageView.frame = CGRectMake(20, 20, 100, 114);
+//    [profileImageView setImageWithURL:[NSURL URLWithString:@"http://animalwelfaretaiwan.webs.com/Cow_with_calf_dsc06514.jpg"]
+//                     placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
+//    [self.view addSubview:profileImageView];
 //}
 
 - (void)didReceiveMemoryWarning
