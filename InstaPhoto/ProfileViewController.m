@@ -34,10 +34,34 @@
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc]
                                          initWithRequest:request];
     operation.responseSerializer = [AFJSONResponseSerializer serializer];
-    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"%@", responseObject);
-    } failure:nil];
+    [operation
+        setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+            NSLog(@"%@", responseObject);
+            // TODO: Load profile data from responseObject JSON
+            self.userProfile = responseObject;
+            [self requestSuccessful];
+        }
+        failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            NSLog(@"Error: %@", error);
+        }
+     ];
     [operation start];
+}
+
+- (void)requestSuccessful
+{
+    // Still hardcode the user profile image because mock json service doesn't have it
+    UIImageView *profileImageView = [[UIImageView alloc] init];
+    profileImageView.frame = CGRectMake(20, 20, 100, 114);
+    [profileImageView setImageWithURL:[NSURL URLWithString:@"http://animalwelfaretaiwan.webs.com/Cow_with_calf_dsc06514.jpg"]
+                     placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
+    [self.view addSubview:profileImageView];
+    
+    // Load remainder of user profile
+    UILabel *nameLabel = [[UILabel alloc] init];
+    nameLabel.frame = CGRectMake(20, 140, 280, 40);
+    nameLabel.text = [NSString stringWithFormat:@"Name: %@ %@", self.userProfile[@"firstName"], self.userProfile[@"lastName"]];
+    [self.view addSubview:nameLabel];
 }
 
 //- (void)viewDidLoad
