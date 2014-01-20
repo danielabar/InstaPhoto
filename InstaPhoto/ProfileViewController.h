@@ -10,6 +10,7 @@
 
 @interface ProfileViewController : UIViewController
 
+@property (strong, nonatomic) UIScrollView *scrollView;
 @property (strong, nonatomic) NSDictionary *userProfile;
 
 @end
