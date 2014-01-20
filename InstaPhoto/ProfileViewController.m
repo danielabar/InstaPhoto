@@ -30,6 +30,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor yellowColor];
+    UIImageView *greggView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"avatar_sample"]];
+    [greggView setContentMode:UIViewContentModeScaleAspectFit];
+    greggView.frame = self.view.frame;
+    [self.view addSubview:greggView];
 }
 
 - (void)didReceiveMemoryWarning

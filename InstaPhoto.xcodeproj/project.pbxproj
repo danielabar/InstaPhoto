@@ -10,6 +10,7 @@
 		510E52AD188CC20B00E7F69F /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 510E52AC188CC20B00E7F69F /* FeedViewController.m */; };
 		510E52B0188CC39C00E7F69F /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 510E52AF188CC39C00E7F69F /* FavoritesViewController.m */; };
 		510E52B3188CC44000E7F69F /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 510E52B2188CC44000E7F69F /* ProfileViewController.m */; };
+		510E52B5188CCAB100E7F69F /* avatar_sample.png in Resources */ = {isa = PBXBuildFile; fileRef = 510E52B4188CCAB100E7F69F /* avatar_sample.png */; };
 		5121FD63188C4D5700062FB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5121FD62188C4D5700062FB6 /* Foundation.framework */; };
 		5121FD65188C4D5700062FB6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5121FD64188C4D5700062FB6 /* CoreGraphics.framework */; };
 		5121FD67188C4D5700062FB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5121FD66188C4D5700062FB6 /* UIKit.framework */; };
@@ -47,6 +48,7 @@
 		510E52AF188CC39C00E7F69F /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
 		510E52B1188CC44000E7F69F /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		510E52B2188CC44000E7F69F /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		510E52B4188CCAB100E7F69F /* avatar_sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar_sample.png; sourceTree = "<group>"; };
 		5121FD5F188C4D5700062FB6 /* InstaPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5121FD62188C4D5700062FB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5121FD64188C4D5700062FB6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -134,6 +136,7 @@
 				51FC62E9188CBE7F006120AD /* tab_icon_profile.png */,
 				5121FD71188C4D5700062FB6 /* AppDelegate.h */,
 				5121FD72188C4D5700062FB6 /* AppDelegate.m */,
+				510E52B4188CCAB100E7F69F /* avatar_sample.png */,
 				5121FD74188C4D5700062FB6 /* Main_iPhone.storyboard */,
 				5121FD77188C4D5700062FB6 /* Main_iPad.storyboard */,
 				5121FD7A188C4D5700062FB6 /* ViewController.h */,
@@ -259,6 +262,7 @@
 				5121FD79188C4D5700062FB6 /* Main_iPad.storyboard in Resources */,
 				5121FD7E188C4D5800062FB6 /* Images.xcassets in Resources */,
 				51FC62EB188CBE7F006120AD /* tab_icon_feed.png in Resources */,
+				510E52B5188CCAB100E7F69F /* avatar_sample.png in Resources */,
 				51FC62EA188CBE7F006120AD /* tab_icon_favorites.png in Resources */,
 				5121FD76188C4D5700062FB6 /* Main_iPhone.storyboard in Resources */,
 				5121FD6D188C4D5700062FB6 /* InfoPlist.strings in Resources */,
@@ -425,6 +429,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InstaPhoto/InstaPhoto-Prefix.pch";
 				INFOPLIST_FILE = "InstaPhoto/InstaPhoto-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -438,6 +443,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InstaPhoto/InstaPhoto-Prefix.pch";
 				INFOPLIST_FILE = "InstaPhoto/InstaPhoto-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
