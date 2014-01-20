@@ -7,6 +7,7 @@
 //
 
 #import "FeedTableViewController.h"
+#import "PhotoViewController.h"
 
 @interface FeedTableViewController ()
 
@@ -72,6 +73,9 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"User clicked on image name %@", self.imageFileNameArray[indexPath.row]);
+    PhotoViewController *photoVC = [[PhotoViewController alloc] init];
+    photoVC.imageFileName = self.imageFileNameArray[indexPath.row];
+    [self.navigationController pushViewController:photoVC animated:YES];
 }
 
 

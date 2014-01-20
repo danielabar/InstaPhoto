@@ -33,6 +33,7 @@
 		51F9F74F188DB21C00529662 /* tab_icon_favorites.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F9F74C188DB21C00529662 /* tab_icon_favorites.png */; };
 		51F9F750188DB21C00529662 /* tab_icon_feed.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F9F74D188DB21C00529662 /* tab_icon_feed.png */; };
 		51F9F751188DB21C00529662 /* tab_icon_profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F9F74E188DB21C00529662 /* tab_icon_profile.png */; };
+		51F9F753188DB3F200529662 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F9F752188DB3F200529662 /* image1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		51F9F74C188DB21C00529662 /* tab_icon_favorites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_icon_favorites.png; sourceTree = "<group>"; };
 		51F9F74D188DB21C00529662 /* tab_icon_feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_icon_feed.png; sourceTree = "<group>"; };
 		51F9F74E188DB21C00529662 /* tab_icon_profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_icon_profile.png; sourceTree = "<group>"; };
+		51F9F752188DB3F200529662 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		5121FD68188C4D5700062FB6 /* InstaPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				51F9F752188DB3F200529662 /* image1.png */,
 				51F9F74C188DB21C00529662 /* tab_icon_favorites.png */,
 				51F9F74D188DB21C00529662 /* tab_icon_feed.png */,
 				51F9F74E188DB21C00529662 /* tab_icon_profile.png */,
@@ -279,6 +282,7 @@
 				51F9F750188DB21C00529662 /* tab_icon_feed.png in Resources */,
 				51F9F74F188DB21C00529662 /* tab_icon_favorites.png in Resources */,
 				510E52B5188CCAB100E7F69F /* avatar_sample.png in Resources */,
+				51F9F753188DB3F200529662 /* image1.png in Resources */,
 				51F9F73D188D6ACA00529662 /* logo.png in Resources */,
 				51F9F751188DB21C00529662 /* tab_icon_profile.png in Resources */,
 				510E52B7188CCBF900E7F69F /* user4.png in Resources */,
