@@ -61,7 +61,7 @@
     if (cell == nil) {
         NSLog(@"Creating new cell");
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Title"];
-        cell.textLabel.text = @"This is a cell";
+        cell.textLabel.text =[NSString stringWithFormat:@"Row %d", indexPath.row];
     } else {
         NSLog(@"Reusing existing cell");
     }
