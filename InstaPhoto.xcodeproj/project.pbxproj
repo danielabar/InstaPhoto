@@ -29,6 +29,7 @@
 		5121FD91188C4D5800062FB6 /* InstaPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5121FD90188C4D5800062FB6 /* InstaPhotoTests.m */; };
 		51F9F73D188D6ACA00529662 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F9F73C188D6ACA00529662 /* logo.png */; };
 		51F9F743188D872B00529662 /* tab_profile_icon_v2.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F9F742188D872B00529662 /* tab_profile_icon_v2.png */; };
+		51F9F745188D8B7600529662 /* tab_fav_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F9F744188D8B7600529662 /* tab_fav_icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		5121FD90188C4D5800062FB6 /* InstaPhotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaPhotoTests.m; sourceTree = "<group>"; };
 		51F9F73C188D6ACA00529662 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		51F9F742188D872B00529662 /* tab_profile_icon_v2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_profile_icon_v2.png; sourceTree = "<group>"; };
+		51F9F744188D8B7600529662 /* tab_fav_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_fav_icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		5121FD68188C4D5700062FB6 /* InstaPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				51F9F744188D8B7600529662 /* tab_fav_icon.png */,
 				51F9F742188D872B00529662 /* tab_profile_icon_v2.png */,
 				51F9F73C188D6ACA00529662 /* logo.png */,
 				5121FD71188C4D5700062FB6 /* AppDelegate.h */,
@@ -265,6 +268,7 @@
 				51F9F73D188D6ACA00529662 /* logo.png in Resources */,
 				510E52B7188CCBF900E7F69F /* user4.png in Resources */,
 				5121FD76188C4D5700062FB6 /* Main_iPhone.storyboard in Resources */,
+				51F9F745188D8B7600529662 /* tab_fav_icon.png in Resources */,
 				5121FD6D188C4D5700062FB6 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

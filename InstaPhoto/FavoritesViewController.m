@@ -21,6 +21,7 @@
     if (self) {
         // Custom initialization
         self.title = @"Favorites";
+        self.tabBarItem.image = [UIImage imageNamed:@"tab_fav_icon.png"];
     }
     return self;
 }
