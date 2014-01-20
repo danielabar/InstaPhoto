@@ -11,5 +11,6 @@
 @interface PhotoViewController : UIViewController
 
 @property (strong, nonatomic) NSString *imageFileName;
+@property (strong, nonatomic) NSString *imageTitle;
 
 @end

@@ -77,6 +77,7 @@
 {
     PhotoViewController *photoVC = [[PhotoViewController alloc] init];
     photoVC.imageFileName = self.imageFileNameArray[indexPath.row];
+    photoVC.imageTitle = self.imageTitleArray[indexPath.row];
     [self.navigationController pushViewController:photoVC animated:YES];
 }
 
