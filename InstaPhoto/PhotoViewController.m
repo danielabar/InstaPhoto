@@ -19,7 +19,9 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        self.photo = [[Photo alloc] init];
+        self.photo.filename = @"image1.png";
+        self.photo.title = @"Higgie";
     }
     return self;
 }

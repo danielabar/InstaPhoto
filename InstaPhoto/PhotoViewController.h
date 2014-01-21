@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Photo.h"
 
 @interface PhotoViewController : UIViewController
 
+@property (strong, nonatomic) Photo *photo;
 @property (strong, nonatomic) NSString *imageFileName;
 @property (strong, nonatomic) NSString *imageTitle;
 

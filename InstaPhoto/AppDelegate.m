@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 
+#import "Photo.h"
 #import "FeedTableViewController.h"
 #import "FavoritesViewController.h"
 #import "ProfileViewController.h"
@@ -16,6 +17,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Instantiate a Photo model
+    Photo *aPhoto = [[Photo alloc] init];
+    aPhoto.title = @"Title 1";
+    aPhoto.detail = @"Detail 1";
+    aPhoto.filename = @"filename1.png";
+    aPhoto.thumbnail = @"thumbnail1.png";
+    
     // Wrap profile view controller in a nav controller
     ProfileViewController *profileViewController = [[ProfileViewController alloc] init];
     UINavigationController *profileNavController = [[UINavigationController alloc] initWithRootViewController:profileViewController];
