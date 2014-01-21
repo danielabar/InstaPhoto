@@ -15,4 +15,7 @@
 @property (strong, nonatomic) NSString *filename;
 @property (strong, nonatomic) NSString *thumbnail;
 
+- (id)initWithName:(NSString *)aName
+       description:(NSString *)aDescription;
+
 @end
