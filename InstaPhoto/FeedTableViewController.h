@@ -10,7 +10,6 @@
 
 @interface FeedTableViewController : UITableViewController
 
-@property (strong, nonatomic) NSArray *imageTitleArray;
-@property (strong, nonatomic) NSArray *imageFileNameArray;
+@property (strong, nonatomic) NSArray *photos;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "PhotoViewController.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface PhotoViewController ()
 
@@ -27,8 +28,10 @@
 {
     [super viewDidLoad];
     
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:self.imageFileName]];
+    UIImageView *imageView = [[UIImageView alloc] init];
     imageView.frame = CGRectMake(10, 10, 300, 300);
+    [imageView setImageWithURL:[NSURL URLWithString:self.imageFileName]
+        placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
     [self.view addSubview:imageView];
     
     UILabel *imageTitleLabel = [[UILabel alloc] init];

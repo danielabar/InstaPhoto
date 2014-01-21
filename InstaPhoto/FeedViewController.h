@@ -10,6 +10,8 @@
 
 @interface FeedViewController : UIViewController
 
+@property (strong, nonatomic) NSArray *photos;
+
 - (void)showFavorites:(UIButton *)sender;
 
 @end

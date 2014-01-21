@@ -8,6 +8,9 @@
 
 #import "FeedTableViewController.h"
 #import "PhotoViewController.h"
+#import "UIImageView+AFNetworking.h"
+#import "AFHTTPRequestOperation.h"
+
 
 @interface FeedTableViewController ()
 
@@ -22,8 +25,6 @@
         // Custom initialization
         self.title = @"Feed";
         self.tabBarItem.image = [UIImage imageNamed:@"tab_icon_feed"];
-        self.imageTitleArray = @[@"Image 1",@"Image 2",@"Image 3",@"Image 4", @"Image 5"];
-        self.imageFileNameArray = @[@"image1.png", @"image2.png", @"image3.png", @"image4.png", @"image5.png"];
     }
     return self;
 }
@@ -31,6 +32,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // Load the feed from the internet (local api in this case)
+    NSURL *URL = [NSURL URLWithString:@"http://localhost:3000/api/photos"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc]
+                                         initWithRequest:request];
+    operation.responseSerializer = [AFJSONResponseSerializer serializer];
+    [operation
+     setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+         NSLog(@"%@", responseObject);
+         self.photos = responseObject;
+         [self.tableView reloadData];
+     }
+     failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+         NSLog(@"Error: %@", error);
+     }
+     ];
+    [operation start];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -54,7 +73,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.imageTitleArray.count;
+    return self.photos.count;
 }
 
 // This method runs one time for each row, when it becomes visible
@@ -65,8 +84,8 @@
     if (cell == nil) {
         NSLog(@"Creating new cell");
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Title"];
-        cell.textLabel.text = self.imageTitleArray[indexPath.row];
-        cell.detailTextLabel.text = self.imageFileNameArray[indexPath.row];
+        cell.textLabel.text = self.photos[indexPath.row][@"title"];
+        cell.detailTextLabel.text = self.photos[indexPath.row][@"detail"];
         // set thumbnail - this is a hack because all cells will get the same image
         cell.imageView.image = [UIImage imageNamed:@"boat-small.jpg"];
     }
@@ -76,8 +95,8 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     PhotoViewController *photoVC = [[PhotoViewController alloc] init];
-    photoVC.imageFileName = self.imageFileNameArray[indexPath.row];
-    photoVC.imageTitle = self.imageTitleArray[indexPath.row];
+    photoVC.imageFileName = self.photos[indexPath.row][@"filename"];
+    photoVC.imageTitle = self.photos[indexPath.row][@"title"];
     [self.navigationController pushViewController:photoVC animated:YES];
 }
 
