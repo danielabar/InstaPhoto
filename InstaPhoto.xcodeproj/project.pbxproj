@@ -51,6 +51,7 @@
 		51F9F7A5188DC54C00529662 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F9F79D188DC54C00529662 /* UIProgressView+AFNetworking.m */; };
 		51F9F7A6188DC54C00529662 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F9F79F188DC54C00529662 /* UIWebView+AFNetworking.m */; };
 		51F9F7A8188DC83E00529662 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F9F7A7188DC83E00529662 /* placeholder.png */; };
+		51F9F7AB188DFC8700529662 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F9F7AA188DFC8700529662 /* Photo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +137,8 @@
 		51F9F79E188DC54C00529662 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		51F9F79F188DC54C00529662 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		51F9F7A7188DC83E00529662 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		51F9F7A9188DFC8700529662 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		51F9F7AA188DFC8700529662 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +226,8 @@
 				51F9F747188D8EA700529662 /* FeedTableViewController.m */,
 				51F9F749188DAFCA00529662 /* PhotoViewController.h */,
 				51F9F74A188DAFCA00529662 /* PhotoViewController.m */,
+				51F9F7A9188DFC8700529662 /* Photo.h */,
+				51F9F7AA188DFC8700529662 /* Photo.m */,
 			);
 			path = InstaPhoto;
 			sourceTree = "<group>";
@@ -423,6 +428,7 @@
 				51F9F7A4188DC54C00529662 /* UIImageView+AFNetworking.m in Sources */,
 				51F9F789188DC54000529662 /* AFHTTPSessionManager.m in Sources */,
 				51F9F7A1188DC54C00529662 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				51F9F7AB188DFC8700529662 /* Photo.m in Sources */,
 				51F9F7A0188DC54C00529662 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				5121FD73188C4D5700062FB6 /* AppDelegate.m in Sources */,
 				51F9F748188D8EA700529662 /* FeedTableViewController.m in Sources */,
